@@ -1,0 +1,160 @@
+const int a = 1;
+const int b = +2,c = -4;
+const char d = 'a';
+const char e = '0',f = '+',g = '_',h = 'A';
+const float i = 0.2;
+const float j = +0.4,k = -0.8,l = +-1.,m = -+1.0;
+int n[10],o;
+char p[2],q;
+float r[4],s;
+void teststring()
+{
+	printf("test string okay!");
+}
+void readwrite()
+{
+	int n,m;
+	scanf(n,m);
+	printf("the first is:",n);
+	printf("the second is:",m);
+	printf("the third is:");
+	printf(-9*10/4+4-1);
+}
+int maxint(int a,int b)
+{
+	if(a>=b)
+		return (a);
+	else
+		return (b);
+}
+char maxchar(char a,char b)
+{
+	if(a>=b)
+		return (a);
+	else
+		return (b);
+}
+float maxfloat(float a,float b)
+{
+	if(a>=b)
+		return (a);
+	else
+		return (b);
+}
+float testcalcu(int a,char b,float c)
+{
+	a = a + b;
+	printf(a);
+	c = a * c/( a - b);
+	printf(c);
+	b = a - 1;
+	printf(b);
+	c = b * 2;
+	return (c);
+}
+int recursion(int n)
+{
+	if(n == 1)
+		return (1);
+	else
+		return (n+recursion(n-1));
+}
+int iteration(int n,int m)
+{
+	int x;
+	x = n*m;
+	if(x<0)
+		x = -x;
+	while(x>0)
+		x = x-2;
+	if(x == 0)
+		return (recursion(n));
+	else
+		return (recursion(m));
+}
+void testnest(int n)
+{
+	if(n>0)
+	{
+		while(n>0)
+		{
+			n = n-2;
+			if(n<0)
+				n = -n;
+		}
+	}
+	else
+	{
+		for(n = n;n>0;n = n-2)
+		{
+			if(n<0)
+				n = -n+1;
+		}
+	}
+	printf("test nest is:",n);
+}
+void init()
+{
+	N[0] = 14;
+	N[1] = 35;
+	N[2] = 22;
+	n[3] = 77;
+	n[4] = 89;
+	n[5] = 63;
+	n[6] = 00;
+	n[7] = -122;
+	n[8] = 433;
+	N[9] = 10;
+	return;
+}
+void sort()
+{
+	int i,j,temp;
+	for(i = 1;i<10;i= i+1)
+	{
+		j = i;
+		temp = n[j];
+		while(n[j]<n[j-1])
+		{
+			n[j-1] = n[j];
+			j = j -1;
+		}	
+		n[j] = temp;				
+	}
+	return;
+}
+void main()
+{
+	int m;
+	int n;
+	scanf(n);
+	if(n == 1)
+	{
+		teststring();
+		readwrite();
+	}
+	if(n == 2)
+	{
+		printf(maxint(10,7));
+		printf(maxchar('1','3'));
+		printf(maxfloat(j,k));
+	}
+	if(n == 3)
+	{
+		testcalcu(a,d,j);
+		iteration(2,5);
+		testnest(5);
+	}
+	if(n == 4)
+	{
+		printf("before");
+		printf(1);
+		for(m = 0;m<10;m = m+1)
+			printf(N[m]);
+		printf("after");
+		printf(2);
+		sort();
+		for(m = 0;m<10;m = m+1)
+			printf(n[m]);
+	}
+}

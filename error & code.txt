@@ -1,0 +1,91 @@
+"ident too long",
+"digit too long",
+"invalid char",
+"without single quota",
+"string too long",
+"repeat defined",
+"too much symbol",
+"undefined word",
+"unsignedint error",
+"without = ",
+"typedef inconsistent",
+"constdef error",
+"without ;",
+"not ident",
+"without ]",
+"withour )",
+"no_ret_func not factor",
+"without [",
+"array index not int",
+"out of array size",
+"format error",
+"unknown factor",
+"type inconsistent",
+"char can't be times ope",
+"char can't be div ope",
+"without if",
+"without (",
+"without while",
+"without for",
+"not variable no change",
+"step on one ident",
+"without scanf",
+"without printf",
+"without return",
+"ident not function",
+"paranum inconsistent",
+"ident not array",
+"array can't be assigned",
+"without }",
+"unknown statement",
+"without main",
+"without {",
+"function void type",
+"without void",
+"without main func",
+"redundant code",
+"out of code array",
+"return not inconsistent"
+
+
+
+    "LDA",//0         
+    "LOD",//1
+    "LDI",//2
+    "INT",//3
+    "JMP",//4
+    "JPC",//5
+    "CAL",//6
+    "LDC",//7
+    "LDR",//8
+    "FLT",//9
+    "RED",//10           //dx标识类型，1：整型，2：实型 3：字符型
+    "WRS",//11
+    "EXF",//12
+    "LDT",//13
+    "MUS",//14
+    "WRR",//15
+    "STO",//16
+    "EQR",//17
+    "NER",//18
+    "LSR",//19
+    "LER",//20
+    "GTR",//21
+    "GER",//22
+    "EQL",//23
+    "NEQ",//24
+    "LSS",//25
+    "LER",//26
+    "GRT",//27
+    "GEQ",//28
+    "ADD",//29
+    "SUB",//30
+    "ADR",//31
+    "SUR",//32
+    "MUL",//33
+    "DIV",//34
+    "MUR",//35
+    "DIR",//36
+    "WRW",//37
+    "MKS"//38
+
